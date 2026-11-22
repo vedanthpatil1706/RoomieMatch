@@ -1,0 +1,340 @@
+
+@import "tailwindcss";
+
+:root {
+  --background: #050816;
+  --foreground: #f8fafc;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
+}
+
+::selection {
+  background: #06b6d4;
+  color: white;
+}
+
+/* Animated background */
+.animated-bg {
+  background:
+    radial-gradient(ellipse at 15% 20%, #123b7080, transparent 45%),
+    radial-gradient(ellipse at 85% 80%, #54218a60, transparent 45%),
+    #050816;
+  background-size: 200% 200%;
+  animation: backgroundFlow 12s ease-in-out infinite alternate;
+}
+
+@keyframes backgroundFlow {
+  0% { background-position: 0% 0%; }
+  100% { background-position: 100% 100%; }
+}
+
+/* Floating glow orbs */
+.orb {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(75px);
+  pointer-events: none;
+  animation: float 9s ease-in-out infinite;
+}
+
+.orb-one {
+  width: 280px;
+  height: 280px;
+  background: #0891b2;
+  opacity: 0.22;
+  top: 10%;
+  left: -100px;
+}
+
+.orb-two {
+  width: 350px;
+  height: 350px;
+  background: #7c3aed;
+  opacity: 0.2;
+  bottom: 0;
+  right: -120px;
+  animation-delay: -4s;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0) scale(1); }
+  50% { transform: translateY(-35px) scale(1.08); }
+}
+
+/* Glass card */
+.glass-card {
+  background: rgba(15, 23, 42, 0.72);
+  border: 1px solid rgba(148, 163, 184, 0.16);
+  backdrop-filter: blur(24px);
+  box-shadow: 0 25px 80px rgba(0, 0, 0, 0.35);
+}
+
+/* Entrance animation */
+.fade-up {
+  animation: fadeUp 0.9s cubic-bezier(.2,.8,.2,1) both;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Animated gradient text */
+.gradient-text {
+  background: linear-gradient(90deg, #67e8f9, #60a5fa, #c084fc, #67e8f9);
+  background-size: 300% auto;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: gradientMove 5s linear infinite;
+}
+
+@keyframes gradientMove {
+  to { background-position: 300% center; }
+}
+
+/* Button glow */
+.glow-button {
+  transition: all 0.3s ease;
+  box-shadow: 0 0 20px rgba(6, 182, 212, 0.2);
+}
+
+.glow-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0 35px rgba(6, 182, 212, 0.5);
+}
+
+/* Floating house illustration */
+.floating-house {
+  animation: houseFloat 4s ease-in-out infinite;
+}
+
+@keyframes houseFloat {
+  0%, 100% { transform: translateY(0) rotate(-2deg); }
+  50% { transform: translateY(-15px) rotate(2deg); }
+}
+
+/* Animated borders */
+.animated-border {
+  position: relative;
+  isolation: isolate;
+}
+
+.animated-border::before {
+  content: "";
+  position: absolute;
+  inset: -1px;
+  border-radius: inherit;
+  padding: 1px;
+  background: linear-gradient(135deg, #22d3ee, #6366f1, #c084fc, #22d3ee);
+  background-size: 300% 300%;
+  animation: borderFlow 5s linear infinite;
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+  z-index: -1;
+}
+
+@keyframes borderFlow {
+  to { background-position: 300% 0; }
+}
+
+/* Reduced motion accessibility */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+
+/* =================================
+   ROOMIEMATCH ADVANCED ANIMATIONS
+================================= */
+
+/* Floating particles */
+.particle {
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: #67e8f9;
+  box-shadow: 0 0 15px #22d3ee, 0 0 30px #22d3ee;
+  pointer-events: none;
+  animation: particleFloat 8s ease-in-out infinite;
+}
+
+.particle:nth-child(2) { animation-delay: -2s; }
+.particle:nth-child(3) { animation-delay: -4s; }
+.particle:nth-child(4) { animation-delay: -6s; }
+
+@keyframes particleFloat {
+  0% { transform: translate(0, 0); opacity: 0; }
+  20% { opacity: 1; }
+  50% { transform: translate(45px, -100px); opacity: 0.9; }
+  100% { transform: translate(-20px, -200px); opacity: 0; }
+}
+
+/* Orbiting avatars */
+.orbit-stage {
+  position: relative;
+  width: 340px;
+  height: 340px;
+  margin: auto;
+}
+
+.orbit {
+  position: absolute;
+  inset: 10px;
+  border: 1px solid rgba(103, 232, 249, 0.25);
+  border-radius: 50%;
+  animation: orbitSpin 18s linear infinite;
+}
+
+.orbit-two {
+  inset: 45px;
+  border-color: rgba(192, 132, 252, 0.3);
+  animation-duration: 13s;
+  animation-direction: reverse;
+}
+
+@keyframes orbitSpin {
+  to { transform: rotate(360deg); }
+}
+
+.orbit-avatar {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 58px;
+  height: 58px;
+  border: 2px solid rgba(103, 232, 249, 0.8);
+  border-radius: 50%;
+  background: #172554;
+  font-size: 27px;
+  box-shadow: 0 0 25px rgba(34, 211, 238, 0.35);
+}
+
+.avatar-one {
+  transform: translate(-50%, -50%) translateY(-160px);
+}
+
+.avatar-two {
+  transform: translate(-50%, -50%) translateX(160px);
+}
+
+.avatar-three {
+  transform: translate(-50%, -50%) translateY(160px);
+}
+
+.avatar-four {
+  transform: translate(-50%, -50%) translateX(-160px);
+}
+
+/* Central matching symbol */
+.match-core {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: flex;
+  width: 125px;
+  height: 125px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(103, 232, 249, 0.5);
+  border-radius: 50%;
+  background: radial-gradient(circle, #164e63, #0f172a 75%);
+  box-shadow: 0 0 35px rgba(34, 211, 238, 0.3);
+  transform: translate(-50%, -50%);
+  animation: corePulse 3s ease-in-out infinite;
+}
+
+@keyframes corePulse {
+  0%, 100% { box-shadow: 0 0 25px #0891b255; }
+  50% { box-shadow: 0 0 65px #06b6d488; }
+}
+
+/* Compatibility score ring */
+.score-ring {
+  background: conic-gradient(
+    #22d3ee 0deg,
+    #818cf8 270deg,
+    rgba(255,255,255,0.08) 270deg
+  );
+  animation: scoreReveal 2s ease-out both;
+}
+
+@keyframes scoreReveal {
+  from { background: conic-gradient(#22d3ee 0deg, #818cf8 0deg, #ffffff12 0deg); }
+  to { background: conic-gradient(#22d3ee 0deg, #818cf8 270deg, #ffffff12 270deg); }
+}
+
+/* Animated typing cursor */
+.typing-cursor {
+  display: inline-block;
+  width: 3px;
+  height: 1em;
+  margin-left: 5px;
+  vertical-align: middle;
+  background: #67e8f9;
+  animation: cursorBlink 0.8s steps(2) infinite;
+}
+
+@keyframes cursorBlink {
+  50% { opacity: 0; }
+}
+
+/* Cinematic entrance effects */
+.reveal-left {
+  animation: revealLeft 1s cubic-bezier(.2,.8,.2,1) both;
+}
+
+.reveal-right {
+  animation: revealRight 1s cubic-bezier(.2,.8,.2,1) both;
+}
+
+@keyframes revealLeft {
+  from { opacity: 0; transform: translateX(-65px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes revealRight {
+  from { opacity: 0; transform: translateX(65px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+/* Responsive orbit */
+@media (max-width: 420px) {
+  .orbit-stage {
+    transform: scale(0.82);
+    transform-origin: center;
+    margin-top: -20px;
+    margin-bottom: -20px;
+  }
+}

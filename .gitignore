@@ -1,0 +1,24 @@
+
+# Secrets
+**/.env
+**/.env.*
+!.env.example
+
+# Python
+**/.venv/
+**/venv/
+**/__pycache__/
+*.py[cod]
+
+# Next.js
+**/node_modules/
+**/.next/
+**/out/
+**/.vercel/
+
+# IDE
+.vscode/
+
+# Build files
+**/dist/
+**/build/
