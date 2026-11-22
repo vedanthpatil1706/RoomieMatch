@@ -4,3 +4,4 @@ uvicorn
 pymongo
 python-dotenv
 PyJWT
+email-validator
