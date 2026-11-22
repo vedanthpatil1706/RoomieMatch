@@ -1,254 +1,248 @@
- 
-<div align="center">
+ <div align="center">
 
 <a href="https://github.com/vedanthpatil1706/RoomieMatch">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=30&pause=900&color=22D3EE&center=true&vCenter=true&width=850&lines=ROOMIEMATCH;Find+your+people.+Find+your+place.;Smarter+roommate+matching." alt="RoomieMatch animated heading" />
+  <img width="100%" src="https://capsule-render.vercel.app/api?type=venom&height=260&color=0:020617,35:082F49,70:312E81,100:581C87&text=ROOMIEMATCH&fontColor=67E8F9&fontSize=65&fontAlignY=42&desc=FIND%20YOUR%20PEOPLE.%20FIND%20YOUR%20PLACE.&descAlignY=62&descSize=17&animation=twinkling" alt="RoomieMatch animated cyberpunk banner"/>
 </a>
 
-<h3>🏠 Find your people. Find your place.</h3>
+<br/>
 
-<p>A full-stack roommate matching platform that helps people discover compatible flatmates through lifestyle preferences, budgets, location, interests, and university details.</p>
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=22&duration=2800&pause=900&color=22D3EE&center=true&vCenter=true&width=750&lines=SMARTER+ROOMMATE+DISCOVERY;LIFESTYLE+%2B+BUDGET+COMPATIBILITY;CONNECT.+MATCH.+LIVE+BETTER." alt="Animated project tagline"/>
 
-<p>
-  <img src="https://img.shields.io/badge/Frontend-Next.js-black?style=for-the-badge&logo=next.js" alt="Next.js"/>
-  <img src="https://img.shields.io/badge/Backend-FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white" alt="FastAPI"/>
-  <img src="https://img.shields.io/badge/Database-MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white" alt="MongoDB"/>
-</p>
+<br/><br/>
 
-<p>
-  <a href="#-features">Features</a> •
-  <a href="#-technology-stack">Tech Stack</a> •
-  <a href="#-how-matching-works">Matching</a> •
-  <a href="#-getting-started">Getting Started</a> •
-  <a href="#-project-structure">Structure</a>
-</p>
+<a href="https://github.com/vedanthpatil1706/RoomieMatch">
+<img src="https://img.shields.io/badge/PROJECT-ROOMIEMATCH-06B6D4?style=for-the-badge&logo=homeassistant&logoColor=white" />
+</a>
+<img src="https://img.shields.io/badge/NEXT.JS-15%2B-000000?style=for-the-badge&logo=next.js&logoColor=white" />
+<img src="https://img.shields.io/badge/FASTAPI-PYTHON-009688?style=for-the-badge&logo=fastapi&logoColor=white" />
+<img src="https://img.shields.io/badge/MONGODB-ATLAS-47A248?style=for-the-badge&logo=mongodb&logoColor=white" />
+
+<br/>
+
+<img src="https://img.shields.io/badge/STATUS-IN%20DEVELOPMENT-8B5CF6?style=flat-square" />
+<img src="https://img.shields.io/badge/AUTH-JWT-EC4899?style=flat-square" />
+<img src="https://img.shields.io/badge/MATCHING-WEIGHTED%20SCORING-06B6D4?style=flat-square" />
+
+<br/><br/>
+
+**[ EXPLORE REPOSITORY ](https://github.com/vedanthpatil1706/RoomieMatch)**
 
 </div>
 
 ---
 
-## ✨ About the Project
+<div align="center">
 
-Finding a roommate is about more than finding someone who can split the rent. RoomieMatch helps users discover people whose living habits and preferences may fit their own.
+# ◈ THE NEXT GENERATION OF SHARED LIVING
 
-Users can create a profile, explore potential matches, compare compatibility scores, send connection requests, and view the full profiles of people they are connected with.
+### More than a roommate search. A compatibility-driven living experience.
 
-> **The goal:** Make the search for a compatible flatmate more structured, transparent, and personal.
+</div>
 
-## 🚀 Features
+RoomieMatch is a full-stack roommate discovery platform designed to help people find compatible flatmates based on their budget, location, lifestyle, food preferences, university, and shared interests.
 
-| Feature | Description |
-|---|---|
-| 🔐 Authentication | User registration and login with token-based authentication |
-| 👤 Profile Management | Save age, gender, university, city, budget, lifestyle, and interests |
-| 🎯 Smart Matching | Compare profile preferences and calculate compatibility scores |
-| 📊 Match Breakdown | Show compatibility across individual matching categories |
-| 🤝 Connection Requests | Send, receive, accept, and reject roommate requests |
-| 🔗 Connections | View accepted connections |
-| 🪪 Profile Viewing | View another user's detailed profile after an accepted connection |
-| 📱 Responsive UI | Modern Next.js interface styled with Tailwind CSS |
+Instead of choosing a roommate randomly, users can explore compatibility scores, understand matching factors, send connection requests, and build meaningful connections.
 
-## 🧠 How Matching Works
+**One platform. Six compatibility dimensions. Better roommate decisions.**
 
-RoomieMatch calculates a compatibility score using six profile dimensions.
+---
 
-| Matching Factor | Weight |
-|---|---:|
-| 💰 Budget Compatibility | 30% |
-| 📍 City | 20% |
-| 🌙 Lifestyle | 20% |
-| 🥗 Food Preference | 10% |
-| 🎨 Shared Interests | 10% |
-| 🎓 University | 10% |
-| **Total** | **100%** |
+## ◈ 01 — THE EXPERIENCE
 
-The dashboard presents an overall compatibility score along with a category-wise breakdown, helping users understand where their preferences align.
+<div align="center">
 
-*The score is a profile-based compatibility indicator, not a guarantee that two people will be ideal roommates.*
+| 🎯 SMART MATCHING | 📊 MATCH ANALYTICS | 🤝 CONNECTIONS |
+|:---:|:---:|:---:|
+| Weighted compatibility scoring | Category-wise score breakdown | Request and accept connections |
 
-## 🛠️ Technology Stack
+| 👤 PERSONAL PROFILES | 🔐 AUTHENTICATION | 🏠 ROOMMATE DISCOVERY |
+|:---:|:---:|:---:|
+| Lifestyle and budget preferences | JWT-based login | Explore potential flatmates |
 
-| Layer | Technologies |
-|---|---|
-| Frontend | Next.js, React, TypeScript |
-| Styling | Tailwind CSS |
-| Backend API | Python, FastAPI, Uvicorn |
-| Database | MongoDB Atlas, PyMongo |
-| Authentication | JWT (HS256), password hashing with `hashlib.scrypt` |
-| Development Tools | VS Code, Git, GitHub |
+</div>
 
-### 🔍 Tools and Technologies
+### ⚡ Core Features
 
-<p>
-  <img src="https://skillicons.dev/icons?i=nextjs,react,ts,tailwind,python,fastapi,mongodb,git,github,vscode" alt="Technology icons" />
-</p>
+- **Secure Authentication:** Register and log in with protected API access.
+- **Personalized Profiles:** Add age, gender, university, city, monthly budget, food preference, sleep schedule, smoking, drinking, and interests.
+- **Compatibility Engine:** Compare potential roommates using six weighted dimensions.
+- **Visual Match Analytics:** Understand compatibility through individual category scores.
+- **Connection Requests:** Send, receive, accept, and reject requests.
+- **Connected Profiles:** View detailed roommate information after an accepted connection.
+- **Responsive Interface:** A modern Next.js interface with a custom dark visual identity.
 
-## 🏗️ Application Architecture
+---
+
+## ◈ 02 — THE COMPATIBILITY ENGINE
+
+<div align="center">
+
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=18&pause=1000&color=A78BFA&center=true&vCenter=true&width=600&lines=NOT+JUST+LOCATION.;NOT+JUST+BUDGET.;A+MORE+COMPLETE+COMPATIBILITY+PICTURE." alt="Compatibility animation"/>
+
+</div>
+
+RoomieMatch calculates a weighted compatibility score using six dimensions.
+
+### The matching model
+
+| Dimension | Weight | Purpose |
+|:---|:---:|:---|
+| 💰 Budget Compatibility | **30%** | Compare overlapping accommodation budgets |
+| 📍 City Compatibility | **20%** | Compare preferred living locations |
+| 🌙 Lifestyle Compatibility | **20%** | Compare smoking, drinking, and sleep schedules |
+| 🍽️ Food Compatibility | **10%** | Compare food preferences |
+| 🎯 Shared Interests | **10%** | Identify common interests |
+| 🎓 University Compatibility | **10%** | Compare university information |
+| **TOTAL** | **100%** | **Weighted compatibility score** |
+
+### Visual weight distribution
+
+```mermaid
+pie showData
+    title RoomieMatch Compatibility Weights
+    "Budget" : 30
+    "City" : 20
+    "Lifestyle" : 20
+    "Food" : 10
+    "Interests" : 10
+    "University" : 10
+```
+
+### How the matching process works
 
 ```mermaid
 flowchart TD
-    A[User] --> B[Next.js Frontend]
-    B -->|HTTP requests + JWT| C[FastAPI Backend]
-    C --> D[Authentication]
-    C --> E[Profile & Matching Logic]
-    C --> F[Connection Management]
-    D --> G[(MongoDB Atlas)]
-    E --> G
-    F --> G
+    A(["👤 User Registration"]) --> B["📝 Complete Profile"]
+    B --> C["⚙️ Matching Engine"]
+    C --> D["💰 Budget Score"]
+    C --> E["📍 City Score"]
+    C --> F["🌙 Lifestyle Score"]
+    C --> G["🍽️ Food Score"]
+    C --> H["🎯 Interest Score"]
+    C --> I["🎓 University Score"]
+    D --> J["📊 Weighted Compatibility"]
+    E --> J
+    F --> J
+    G --> J
+    H --> J
+    I --> J
+    J --> K["🏠 Discover Potential Roommates"]
+    K --> L["🤝 Send Connection Request"]
+    L --> M(["💙 Build Connections"])
 ```
 
-## 📂 Project Structure
-
-```text
-RoomieMatch/
-│
-├── backend/
-│   ├── app/
-│   │   ├── __init__.py
-│   │   ├── database.py
-│   │   └── main.py
-│   └── requirements.txt
-│
-├── frontend/
-│   ├── public/
-│   ├── src/
-│   │   └── app/
-│   │       ├── components/
-│   │       │   └── Navbar.tsx
-│   │       ├── connections/
-│   │       ├── dashboard/
-│   │       ├── profile/
-│   │       ├── roommate/
-│   │       ├── globals.css
-│   │       ├── layout.tsx
-│   │       └── page.tsx
-│   └── package.json
-│
-└── .gitignore
-```
-
-## ⚙️ Getting Started
-
-Follow these steps to run RoomieMatch locally.
-
-### 1. Clone the Repository
-
-```bash
-git clone https://github.com/vedanthpatil1706/RoomieMatch.git
-cd RoomieMatch
-```
-
-### 2. Configure the Backend
-
-```bash
-cd backend
-python -m venv .venv
-```
-
-Activate the virtual environment.
-
-**Windows PowerShell:**
-
-```powershell
-.venv\Scripts\Activate.ps1
-```
-
-Install dependencies:
-
-```bash
-pip install -r requirements.txt
-```
-
-Create a `backend/.env` file and configure the environment variables required by `backend/app/database.py` and `backend/app/main.py`, such as your MongoDB connection URI and JWT secret. Use the exact variable names expected by your backend code.
-
-Start the backend:
-
-```bash
-python -m uvicorn app.main:app --reload
-```
-
-Backend API:
-
-`http://127.0.0.1:8000`
-
-Interactive API documentation:
-
-`http://127.0.0.1:8000/docs`
-
-### 3. Configure the Frontend
-
-Open a second terminal:
-
-```bash
-cd frontend
-npm install
-```
-
-Configure the frontend API base URL to point to your backend. For local development, the current application uses:
-
-```text
-http://127.0.0.1:8000
-```
-
-Start the frontend:
-
-```bash
-npm run dev
-```
-
-Frontend:
-
-`http://localhost:3000`
-
-### 4. Create Your Account
-
-1. Open the frontend in your browser.
-2. Register a new account.
-3. Complete your roommate profile.
-4. Explore potential matches.
-5. Send or respond to connection requests.
-
-## 🔒 Security Notes
-
-- Never commit `.env` files, database credentials, JWT secrets, or private keys.
-- Keep secrets in environment variables on your deployment platform.
-- Restrict MongoDB Atlas network access appropriately for your deployment.
-- Use HTTPS and production-grade secret values when deploying.
-- The `.gitignore` file excludes local environment and generated files.
-
-## 🗺️ Roadmap
-
-- [ ] Deploy the frontend and backend.
-- [ ] Add profile photos and richer profile presentation.
-- [ ] Add filters for city, budget, university, and lifestyle.
-- [ ] Improve match explanations and preference controls.
-- [ ] Add notifications for incoming connection requests.
-- [ ] Add automated tests for authentication, matching, and connections.
-- [ ] Add a polished product demo with screenshots.
-
-## 🖼️ Screenshots
-
-Screenshots will be added here as the interface is finalized.
-
-## 🤝 Contributing
-
-Suggestions, bug reports, and improvements are welcome. Feel free to open an issue or submit a pull request.
-
-## 👨‍💻 Author
-
-**Vedant Patil**
-
-- GitHub: [@vedanthpatil1706](https://github.com/vedanthpatil1706)
-- Project: [RoomieMatch](https://github.com/vedanthpatil/RoomieMatch)
+> **Scoring note:** The compatibility percentage is a profile-based indicator calculated using the implemented weighted rules. It is not a machine-learning prediction or a guarantee of roommate suitability.
 
 ---
 
+## ◈ 03 — TECHNOLOGY MATRIX
+
 <div align="center">
 
-### 🏠 RoomieMatch
-
-**Find your people. Find your place.**
-
-<sub>Built with curiosity, code, and the idea that better shared living starts with better compatibility.</sub>
+### POWERED BY A MODERN FULL-STACK ECOSYSTEM
 
 </div>
+
+### Frontend
+
+<p>
+<img src="https://skillicons.dev/icons?i=nextjs,react,ts,tailwind" />
+</p>
+
+| Technology | Role |
+|:---|:---|
+| Next.js | Frontend framework |
+| React | Component-based UI |
+| TypeScript | Type-safe frontend development |
+| Tailwind CSS | Styling and responsive layouts |
+
+### Backend
+
+<p>
+<img src="https://skillicons.dev/icons?i=python,fastapi" />
+</p>
+
+| Technology | Role |
+|:---|:---|
+| Python | Backend programming |
+| FastAPI | REST API development |
+| Uvicorn | ASGI server |
+| PyMongo | MongoDB connectivity |
+
+### Database & Security
+
+<p>
+<img src="https://skillicons.dev/icons?i=mongodb" />
+</p>
+
+| Technology | Role |
+|:---|:---|
+| MongoDB Atlas | Cloud database |
+| JWT | Authentication tokens |
+| HS256 | JWT signing algorithm |
+| hashlib.scrypt | Password hashing |
+| Git & GitHub | Version control and source hosting |
+
+### Development Environment
+
+<p>
+<img src="https://skillicons.dev/icons?i=vscode,git,github,powershell" />
+</p>
+
+---
+
+## ◈ 04 — SYSTEM ARCHITECTURE
+
+<div align="center">
+
+### THE ROOMIEMATCH ECOSYSTEM
+
+</div>
+
+```mermaid
+flowchart TB
+    U(["👤 USER"])
+    subgraph FRONTEND["💠 PRESENTATION LAYER"]
+        A["Next.js Application"]
+        B["React Components"]
+        C["TypeScript + Tailwind"]
+    end
+
+    subgraph BACKEND["⚡ APPLICATION LAYER"]
+        D["FastAPI REST API"]
+        E["JWT Authentication"]
+        F["Profile Management"]
+        G["Compatibility Engine"]
+        H["Connection Management"]
+    end
+
+    subgraph DATA["🗄️ DATA LAYER"]
+        I[("MongoDB Atlas")]
+        J["Users Collection"]
+        K["Profiles Collection"]
+        L["Connection Requests"]
+    end
+
+    U --> A
+    A --> B
+    B --> C
+    C -->|"HTTP + Bearer Token"| D
+    D --> E
+    D --> F
+    D --> G
+    D --> H
+    E --> I
+    F --> I
+    G --> I
+    H --> I
+    I --> J
+    I --> K
+    I --> L
+```
+
+### Architecture responsibilities
+
+| Component | Responsibility |
+|:---|:---|
+| Next.js | User interface and navigation |
+| FastAPI
