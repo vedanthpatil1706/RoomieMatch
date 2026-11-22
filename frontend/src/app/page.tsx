@@ -4,7 +4,7 @@
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 
-const API = "http://127.0.0.1:8000";
+const API = "https://roomiematch-ohpj.onrender.com";
 
 type User = {
   id: string;
